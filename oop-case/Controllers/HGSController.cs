@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using oop_case.Interfaces;
 using oop_case.Models;
 
 namespace oop_case.Controllers
@@ -11,7 +12,7 @@ namespace oop_case.Controllers
         [HttpGet("PassThroughProcess")]
         public ActionResult PassThroughProcess()
         {
-            Vehicle vehicle = Vehicle.CreateRandomVehicle();
+            IVehicle vehicle = Utilities.Random.CreateRandomVehicle();
 
             if (!Booth.PaymentProcess(vehicle))
             {

@@ -1,4 +1,5 @@
 ﻿using System;
+
 namespace oop_case.Models
 {
     public class Management

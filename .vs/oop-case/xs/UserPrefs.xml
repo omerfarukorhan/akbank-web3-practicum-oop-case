@@ -1,0 +1,39 @@
+﻿<Properties StartupConfiguration="{DF0DF964-99FB-4724-88A1-E3EEA147AACB}|Default">
+  <MonoDevelop.Ide.ItemProperties.oop-case PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.Workbench ActiveDocument="oop-case/Interface/IVehicle.cs">
+    <Files>
+      <File FileName="oop-case/Controllers/HGSController.cs" Line="16" Column="26" />
+      <File FileName="oop-case/Models/Vehicle/Car.cs" Line="4" Column="32" />
+      <File FileName="oop-case/Models/Vehicle/Bus.cs" Line="6" Column="38" />
+      <File FileName="oop-case/Models/Vehicle/Minibus.cs" Line="15" Column="28" />
+      <File FileName="oop-case/Interface/IVehicle.cs" Line="13" Column="29" />
+      <File FileName="oop-case/Models/Booth.cs" Line="19" Column="38" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="oop-case" expanded="True">
+            <Node name="oop-case" expanded="True">
+              <Node name="Controllers" expanded="True" />
+              <Node name="Interface" expanded="True">
+                <Node name="IVehicle.cs" selected="True" />
+              </Node>
+              <Node name="Models" expanded="True">
+                <Node name="Vehicle" expanded="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State />
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+</Properties>

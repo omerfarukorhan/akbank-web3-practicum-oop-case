@@ -1,9 +1,15 @@
 ﻿using System;
+using oop_case.Interfaces;
+
 namespace oop_case.Models
 {
-    public class Car : Vehicle
+    public class Car : IVehicle
     {
-        // TODO Car class specific properties can be added to this part
+        public IVehicle.VehicleClass vehicleClass { get; set; } = IVehicle.VehicleClass.Car;
+        public string HGSNo { get; set; } = string.Empty;
+        public string OwnerName { get; set; } = string.Empty;
+        public string OwnerSurname { get; set; } = string.Empty;
+        public double Balance { get; set; } = double.MinValue;
     }
 }
 

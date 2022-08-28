@@ -1,9 +1,11 @@
 ﻿using System;
+using oop_case.Interfaces;
+
 namespace oop_case.Models
 {
     public class Booth
     {
-        public static bool PaymentProcess(Vehicle vehicle)
+        public static bool PaymentProcess(IVehicle vehicle)
         {
             double toll = CalculateToll(vehicle);
             if (vehicle.Balance < toll)
@@ -14,13 +16,13 @@ namespace oop_case.Models
             return true;
         }
 
-        public static double CalculateToll(Vehicle vehicle)
+        public static double CalculateToll(IVehicle vehicle)
         {
-            return vehicle.VehicleClassNo switch
+            return vehicle.vehicleClass switch
             {
-                1 => 20.80,
-                2 => 35.50,
-                3 => 60.75,
+                IVehicle.VehicleClass.Car => 20.80,
+                IVehicle.VehicleClass.Minibus => 35.50,
+                IVehicle.VehicleClass.Bus => 60.75,
                 _ => 20,
             };
         }

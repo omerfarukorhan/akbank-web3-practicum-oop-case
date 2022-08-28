@@ -14,9 +14,19 @@
   <ItemGroup>
     <None Remove="Models\" />
     <None Remove="Models\Vehicle\" />
+    <None Remove="Interface\" />
+    <None Remove="Utilities\" />
+    <None Remove="Models\Booth\" />
+    <None Remove="Models\Management\" />
+    <None Remove="Models\HGSLog\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Models\" />
     <Folder Include="Models\Vehicle\" />
+    <Folder Include="Interfaces\" />
+    <Folder Include="Utilities\" />
+    <Folder Include="Models\Booth\" />
+    <Folder Include="Models\Management\" />
+    <Folder Include="Models\HGSLog\" />
   </ItemGroup>
 </Project>

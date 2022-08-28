@@ -1,18 +1,13 @@
 ﻿using System;
-namespace oop_case.Models
+using oop_case.Interfaces;
+using oop_case.Models;
+
+namespace oop_case.Utilities
 {
-    public class Vehicle
+    public class Random
     {
-        public int VehicleClassNo { get; set; } = 0;
-        public string VehicleClassName { get; set; } = string.Empty;
-        public string HGSNo { get; set; } = string.Empty;
-        public string OwnerName { get; set; } = string.Empty;
-        public string OwnerSurname { get; set; } = string.Empty;
-        public double Balance { get; set; } = 0;
-
-        public enum VehicleClass { Car = 1, Minibus = 2, Bus = 3 };
-
-        public static Vehicle CreateRandomVehicle()
+        // Random vehicle generation method based on timestamp simulating hgs vehicle transition
+        public static IVehicle CreateRandomVehicle()
         {
             long timestamp = new DateTimeOffset(DateTime.UtcNow).ToUnixTimeMilliseconds();
 
@@ -20,8 +15,6 @@ namespace oop_case.Models
             {
                 0 => new Car()
                 {
-                    VehicleClassNo = (int) VehicleClass.Car,
-                    VehicleClassName = VehicleClass.Car.ToString(),
                     HGSNo = $"hsg{timestamp}",
                     OwnerName = "Ömer Faruk",
                     OwnerSurname = "Orhan",
@@ -29,8 +22,6 @@ namespace oop_case.Models
                 },
                 1 => new Minibus()
                 {
-                    VehicleClassNo = (int)VehicleClass.Minibus,
-                    VehicleClassName = VehicleClass.Minibus.ToString(),
                     HGSNo = $"hsg{timestamp}",
                     OwnerName = "Mehmet",
                     OwnerSurname = "Orhan",
@@ -38,8 +29,6 @@ namespace oop_case.Models
                 },
                 2 => new Bus()
                 {
-                    VehicleClassNo = (int)VehicleClass.Bus,
-                    VehicleClassName = VehicleClass.Bus.ToString(),
                     HGSNo = $"hsg{timestamp}",
                     OwnerName = "Zuhal",
                     OwnerSurname = "Orhan",
